@@ -38,9 +38,9 @@
 <td>{{ $customer->address }}</td>
 <td>
 <form action="{{ route('customers.destroy',$customer->id) }}" method="POST">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <a class="btn btn-info" id="show-customer" data-toggle="modal" data-id="{{ $customer->id }}" >Show</a>
 <a href="javascript:void(0)" class="btn btn-success" id="edit-customer" data-toggle="modal" data-id="{{ $customer->id }}">Edit </a>
-<meta name="csrf-token" content="{{ csrf_token() }}">
 <a id="delete-customer" data-id="{{ $customer->id }}" class="btn btn-danger delete-user">Delete</a></td>
 </form>
 </td>

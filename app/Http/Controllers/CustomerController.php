@@ -1,14 +1,12 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Customer;
 use Redirect,Response;
-
 class CustomerController extends Controller
 {
-    /**
+
+	/**
 	* Display a listing of the resource.
 	*
 	* @return \Illuminate\Http\Response
